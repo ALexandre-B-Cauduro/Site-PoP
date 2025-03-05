@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - POP-RS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo POP-RS"> <!-- Substitua pelo caminho real do logo -->
+    </div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="index.html" class="dropbtn">Início</a>
+          <div class="dropdown-content">
+            <a href="index.html">Início</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="instituicoes-conectadas.html">Instituições Conectadas</a>
+            <a href="links-importantes.html">Links Importantes</a>
+            <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+          </div>
+        </li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Histórico</a>
+          <div class="dropdown-content">
+            <a href="publicacoes-apresentacoes.html">Publicações e Apresentações</a>
+            <a href="wtr.html">Workshops de Tecnologias de Redes (WTR)</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="estatistica.html" class="dropbtn">Estatística</a>
+          <div class="dropdown-content">
+            <a href="estatistica.html">Estatística</a>
+            <a href="http://flows.pop-rs.rnp.br/" target="_blank">Flows [acesso interno e para clientes]</a>
+            <a href="https://rrd.pop-rs.rnp.br/" target="_blank">RRD [Estatísticas de Tráfego de Clientes]</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Serviços</a>
+          <div class="dropdown-content">
+            <a href="dns.html">DNS Secundário</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="ipv6.html">IPv6</a>
+            <a href="https://beta.simet.nic.br/" target="_blank">Mediação de Banda – SIMET (Nic.br)</a>
+            <a href="ntp.html">NTP</a>
+            <a href="configuracao-email.html">Configuração de Email</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="hero">
+        <h1>Bem-vindo ao POP-RS</h1>
+        <p>Seu ponto de presença na rede acadêmica.</p>
+        <a href="instituicoes-conectadas.html" class="cta-button">Conheça as Instituições Conectadas</a>
+      </section>
+
+      <section class="disponibilidade">
+        <h2>Disponibilidade</h2>
+        <p>Disponibilidade mais recente (<span id="disponibilidade-mes"></span>): <span id="disponibilidade">Carregando...</span></p>
+        <p><a href="estatistica.html">Veja mais detalhes sobre a disponibilidade</a></p>
+      </section>
+
+      <section class="noticias-rapidas">
+        <h2>Últimas Notícias</h2>
+        <ul>
+          <li><a href="noticias.html">Novo workshop de redes anunciado para 2025</a> - 01/03/2025</li>
+          <li><a href="noticias.html">PoP-RS atinge 99,5% de disponibilidade em fevereiro</a> - 28/02/2025</li>
+          <li><a href="noticias.html">Atualização de segurança para clientes da Rede Tchê</a> - 15/02/2025</li>
+        </ul>
+        <p><a href="noticias.html">Veja todas as notícias</a></p>
+      </section>
+
+      <section class="sobre-pop-rs">
+        <h2>Sobre o PoP-RS</h2>
+        <p>A Rede Nacional de Ensino e Pesquisa (RNP) oferece conexão gratuita à internet para instituições de ensino e de pesquisa, públicas e privadas, através dos pontos de presença, espalhados por todos os estados brasileiros e no Distrito Federal.</p>
+        <p>O PoP-RS representa a RNP no Rio Grande do Sul. Localizado em Porto Alegre, no Centro de Processamento de Dados da Universidade Federal do Rio Grande do Sul (CPD/UFRGS). Junto ao POP-RS também funciona o POP-POA da rede acadêmica do estado, a Rede Tchê.</p>
+        <p>O PoP-RS também é a sede do ponto de troca de tráfego de Rio Grande do Sul, o RSIX (Rio Grande do Sul Internet eXchange), onde estão conectados vários backbones comerciais e acadêmicos. Para obter mais <a href="http://rs.ptt.br/">informações</a> e saber como se conectar ao RSIX, acesse a <a href="http://rs.ptt.br/">página rs.ptt.br</a>.</p>
+      </section>
+
+      <section class="bracos-pop-rs">
+        <h2>Braços do PoP-RS</h2>
+        <div class="braso-grid">
+          <div class="braso-card">
+            <h3>NOC</h3>
+            <p>O PoP-RS possui seu Network Operation Center no qual é possível visualizar as estatísticas das instituições a ele conectadas e controlar os backbones da rede.</p>
+          </div>
+          <div class="braso-card">
+            <h3>Clientes</h3>
+            <p>O PoP-RS possui 117 instituições conectadas. Visite a <a href="instituicoes-conectadas.html">página de instituições</a> e conheça quais são estas instituições.</p>
+          </div>
+          <div class="braso-card">
+            <h3>Rede Tchê</h3>
+            <p>A Rede Tchê integra universidades e centros de pesquisa localizados no Rio Grande do Sul. O nodo de Porto Alegre é a porta de entrada da rede no Estado e ponto de conexão com o resto do país através do PoP-RS.</p>
+            <p><a href="https://tche.br">Confira o site da Rede Tchê</a></p>
+          </div>
+          <div class="braso-card">
+            <h3>ESR</h3>
+            <p>A Escola Superior de Redes (ESR) incorpora à sua grade de cursos temas inovadores, aproveitando a experiência da RNP no uso e desenvolvimento de novas tecnologias de rede. Desde 18 de março de 2008, a Escola conta com uma unidade em Porto Alegre.</p>
+            <p><a href="https://esr.rnp.br">Confira o site da ESR</a></p>
+          </div>
+          <div class="braso-card">
+            <h3>RSiX</h3>
+            <p>O RSiX é uma interligação em área metropolitana de pontos de interconexão de redes (PIXes), comerciais e acadêmicos, sob uma gerência centralizada.</p>
+            <p><a href="http://rs.ptt.br/">Confira o site do RSiX</a></p>
+          </div>
+          <div class="braso-card">
+            <h3>CERT-RS</h3>
+            <p>O CERT-RS é o grupo de resposta a incidentes de segurança mantido pelo PoP-RS/RNP. O CERT-RS é responsável por receber, analisar e responder a incidentes de segurança envolvendo redes conectadas à Rede Tchê.</p>
+            <p><a href="https://cert-rs.tche.br">Confira o site do CERT-RS</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>POP-RS</h3>
+        <p>Ponto de Presença da RNP no Rio Grande do Sul</p>
+        <p>Centro de Processamento de Dados<br>da Universidade Federal do Rio Grande do Sul - CPD/UFRGS</p>
+        <p>Rua Ramiro Barcelos, 2574 - Portão K - CPD/UFRGS</p>
+        <p>CEP: 90035-003 - Porto Alegre - RS - Brasil</p>
+        <p></p> <!-- Linha em branco -->
+        <p></p> <!-- Linha em branco -->
+        <p><a href="politica-de-uso.html">Política de uso de dados do PoP-RS</a></p>
+      </div>
+      <div class="footer-right">
+        <h3>Contato</h3>
+        <p>Telefone: (51) 3308-5039</p>
+        <p>Telefone: (51) 3308-5042</p>
+        <p>E-mail: <a href="mailto:suporte@pop-rs.rnp.br">suporte@pop-rs.rnp.br</a></p>
+        
+        <h3>Plantão</h3>
+        <p>Voz: (51) 99942-5732</p>
+        <p>Whatsapp: (51) 3308-5039</p>
+        
+        <h3>Abertura de chamados RNP</h3>
+        <p>E-mail: <a href="mailto:atendimento@rnp.br">atendimento@rnp.br</a></p>
+        <p>Telefone: 0800 722 0216</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
